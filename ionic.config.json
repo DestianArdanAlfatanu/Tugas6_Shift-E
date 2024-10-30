@@ -1,0 +1,7 @@
+{
+  "name": "sztcymApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
