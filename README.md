@@ -1,18 +1,19 @@
-ScreenShot Hasil
+# ScreenShot Hasil
 ![image](https://github.com/user-attachments/assets/aa8ef10a-cf4e-4aa4-864d-5eb5f549826c)
 
-Langkah Menambahkan Komponen di Halaman Ionic
-1.  Membuat Komponen Baru
-   Ionic menyediakan beragam komponen siap pakai seperti tombol, kartu, daftar, search bar, dan lainnya.
-2.  Menambahkan Komponen di Halaman
-   a. Buka Halaman yang Ingin Diedit
-   Navigasikan ke direktori proyek Ionic dan buka halaman yang ingin kamu tambahkan komponen. Halaman ini biasanya ada di src/app dan memiliki ekstensi .page.html dan .page.scss. Contoh:
+# Langkah Menambahkan Komponen di Halaman Ionic
+
+## 1. Membuat Komponen Baru
+Ionic menyediakan beragam **komponen siap pakai** seperti tombol, kartu, daftar, search bar, dan lainnya.
+## 2. Menambahkan Komponen di Halaman
+### a. Buka Halaman yang Ingin Diedit
+Navigasikan ke direktori proyek Ionic dan buka halaman yang ingin kamu tambahkan komponen. Halaman ini biasanya ada di `src/app` dan memiliki ekstensi `.page.html` dan `.page.scss`. Contoh:
    ```dart
    src/app/folder/folder.page.html
    src/app/folder/folder.page.scss
    ```
-   b. Tambahkan Kode HTML
-   Komponen header dan Toolbar
+   ### b. Tambahkan Kode HTML
+#### Komponen Header dan Toolbar
    ```dart
    <ion-header [translucent]="true">
      <ion-toolbar>
@@ -29,11 +30,11 @@ ion-buttons & ion-menu-button: Membuat tombol menu di kiri header.
 ion-title: Menampilkan judul dengan variabel {{ folder }}.
 
 
-Komponen Search Bar
+#### Komponen Search Bar
 ```dart <ion-searchbar placeholder="Search students..." showCancelButton="focus"></ion-searchbar> ```
 Menambahkan kolom pencarian dengan teks placeholder dan tombol cancel.
 
-Daftar dengan Ikon
+#### Daftar dengan Ikon
 ```dart
 <ion-list>
   <ion-item>
@@ -52,7 +53,7 @@ Daftar dengan Ikon
 ```
 ion-list menciptakan daftar item, dengan setiap item berisi label (ion-label) dan ikon (ion-icon).
 
-Kartu dengan Informasi Pengguna
+#### Kartu dengan Informasi Pengguna
 ```dart
 <ion-card class="custom-card">
   <ion-card-header>
@@ -78,7 +79,7 @@ Kartu dengan Informasi Pengguna
 ```
 ion-card digunakan untuk menampilkan informasi dalam bentuk kartu, dengan bagian header (ion-card-header) dan konten (ion-card-content).
 
-Penataan Komponen di CSS
+#### Penataan Komponen di CSS
 ```dart
 #container {
   padding: 16px;
@@ -109,7 +110,7 @@ ion-list {
 ```
 Setiap komponen memiliki gaya tersendiri, seperti ion-searchbar dan ion-list yang diberi margin bawah, dan .avatar yang dibuat bulat.
 
-Jalankan Aplikasi
+### c. Jalankan Aplikasi
 Setelah selesai menambahkan dan menata komponen, jalankan aplikasi menggunakan perintah:
 ```dart
 Ionic Serve
